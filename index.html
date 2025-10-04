@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico: Oficinas Educacionais de Tênis de Mesa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --cor-primaria: #d32f2f; /* Vermelho, cor associada ao tênis de mesa */
+            --cor-secundaria: #00796b; /* Verde escuro para contraste e seriedade */
+            --cor-texto-escuro: #343a40;
+            --cor-texto-claro: #ffffff;
+            --cor-fundo: #f8f9fa;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto-escuro);
+            padding: 2rem 0;
+        }
+
+        .container-a4 {
+            width: 100%; max-width: 1123px; min-height: 794px;
+            background: var(--cor-texto-claro); padding: 2.5rem;
+            border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 2rem auto;
+        }
+
+        header { text-align: center; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+        
+        header .imagem-principal {
+            max-height: 180px; max-width: 100%;
+            width: auto; height: auto;
+            border-radius: 10px; margin-bottom: 1.5rem;
+            background-color: #e9ecef;
+        }
+
+        .header-titulo {
+            display: flex; justify-content: center; align-items: center;
+            gap: 1.5rem; flex-wrap: wrap;
+        }
+        
+        .header-titulo .logo-ctb { height: 70px; width: auto; }
+        .header-titulo h1 { color: var(--cor-primaria); font-size: 2.4rem; font-weight: 700; margin: 0; }
+        header .subtitulo { font-size: 1.2rem; font-weight: 300; margin-top: 0.5rem; }
+
+        .titulo-seccao {
+            font-size: 1.8rem; font-weight: 600; color: var(--cor-texto-escuro);
+            margin-bottom: 1.5rem; text-align: center;
+            border-bottom: 2px solid var(--cor-secundaria);
+            padding-bottom: 0.5rem; display: inline-block;
+        }
+        
+        .center-title { text-align: center; margin-bottom: 2rem; }
+        .texto-principal { text-align: center; font-size: 1rem; line-height: 1.6; max-width: 800px; margin: 0 auto 2.5rem auto; }
+
+        .grelha { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-bottom: 2.5rem; }
+        
+        .cartao {
+            background-color: var(--cor-primaria); color: var(--cor-texto-claro);
+            border-radius: 10px; padding: 1.5rem; text-align: center;
+            flex-basis: 180px; flex-grow: 1;
+            display: flex; flex-direction: column; justify-content: center;
+        }
+
+        .cartao .icone { font-size: 2.5rem; font-weight: 700; line-height: 1.1; }
+        .cartao .titulo-cartao { font-size: 1.1rem; font-weight: 600; margin-top: 0.5rem; }
+        .cartao .descricao { font-size: 0.9rem; font-weight: 300; }
+
+        .cartao-texto {
+            background-color: #e9ecef; color: var(--cor-texto-escuro);
+            border-radius: 10px; padding: 1.5rem; text-align: left;
+            flex-basis: 280px; flex-grow: 1;
+        }
+        .cartao-texto h3 { font-size: 1.1rem; font-weight: 600; color: var(--cor-primaria); margin-bottom: 0.5rem; }
+        .cartao-texto p { font-size: 0.9rem; line-height: 1.5; }
+        
+        .valor-container {
+            background: linear-gradient(135deg, var(--cor-primaria), #9a0007); color: var(--cor-texto-claro);
+            border-radius: 10px; padding: 2rem; text-align: center;
+        }
+        .valor-container h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; border: none; }
+        .valor-container .valor { font-size: 2.5rem; font-weight: 700; color: var(--cor-secundaria); }
+
+        footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #dee2e6; text-align: center; }
+        footer p { font-size: 0.9rem; line-height: 1.5; }
+        footer a { color: var(--cor-primaria); text-decoration: none; font-weight: 600; }
+        footer a:hover { text-decoration: underline; }
+
+        @media print {
+            body { padding: 0; background-color: #fff; }
+            .container-a4 {
+                width: 297mm; height: 210mm; margin: 0;
+                box-shadow: none; border-radius: 0; padding: 15mm;
+                page-break-after: always;
+            }
+            .container-a4:last-child { page-break-after: avoid; }
+            header .imagem-principal { max-height: 160px; }
+            .header-titulo .logo-ctb { height: 60px; }
+            .header-titulo h1 { font-size: 22pt; }
+            .titulo-seccao { font-size: 16pt; }
+            body, p, li { font-size: 9pt; }
+            .cartao-texto p { font-size: 8.5pt; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container-a4" id="pagina-1">
+        <header>
+            <img src="tenisdemesa.jpg" alt="Jovens a praticar ténis de mesa" class="imagem-principal">
+            <div class="header-titulo">
+                <img src="ctb.png" alt="Logomarca do Clube dos Tenistas da Bahia" class="logo-ctb">
+                <h1>Oficinas Educacionais de Tênis de Mesa</h1>
+            </div>
+            <p class="subtitulo">Nº do Projeto: 2502377</p>
+        </header>
+
+        <section class="objetivos">
+            <div class="center-title"><h2 class="titulo-seccao">Objetivo do Projeto</h2></div>
+            <p class="texto-principal">Difundir a prática do Tênis de Mesa em escolas públicas da Bahia para promover a inclusão social, o desenvolvimento pessoal e a melhoria da qualidade de vida dos alunos. O projeto prevê a realização de oficinas, a capacitação de professores e a doação de materiais esportivos, garantindo um legado duradouro.</p>
+        </section>
+
+        <section class="info-chave">
+             <div class="center-title"><h2 class="titulo-seccao">Informações Chave</h2></div>
+             <div class="grelha">
+                <div class="cartao"><div class="icone">👥</div><div class="titulo-cartao">Público-Alvo</div><p class="descricao">2.000 Crianças e Adolescentes de 6 a 18 anos</p></div>
+                <div class="cartao"><div class="icone">📍</div><div class="titulo-cartao">Abrangência</div><p class="descricao">10 Escolas Públicas em 8 Municípios da Bahia</p></div>
+                <div class="cartao"><div class="icone">⏰</div><div class="titulo-cartao">Duração</div><p class="descricao">12 Meses</p></div>
+                <div class="cartao"><div class="icone">🎁</div><div class="titulo-cartao">Legado do Projeto</div><p class="descricao">Doação de kits completos de Tênis de Mesa para cada escola</p></div>
+             </div>
+        </section>
+
+        <section class="metodologia">
+            <div class="center-title"><h2 class="titulo-seccao">Metodologia</h2></div>
+            <div class="grelha">
+                <div class="cartao-texto">
+                    <h3>Oficinas Itinerantes</h3>
+                    <p>Cada uma das 10 escolas receberá uma oficina completa de 8 horas, realizada às sextas-feiras por 2 profissionais de educação física e 16 auxiliares especialistas.</p>
+                </div>
+                <div class="cartao-texto">
+                    <h3>Capacitação de Professores</h3>
+                    <p>O projeto irá capacitar os profissionais de educação física das escolas participantes na modalidade de Tênis de Mesa, atualizando-os sobre técnicas e metodologias.</p>
+                </div>
+                <div class="cartao-texto">
+                    <h3>Criação de Clubes</h3>
+                    <p>Para garantir a continuidade, o projeto incentivará a criação de clubes de Tênis de Mesa nas escolas, com acompanhamento técnico para apoiar a evolução dos alunos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="container-a4" id="pagina-2">
+        <section class="justificativa">
+            <div class="center-title"><h2 class="titulo-seccao">Justificativa Social</h2></div>
+            <p class="texto-principal">Muitas escolas públicas não possuem recursos para oferecer atividades esportivas de qualidade. Este projeto supre essa lacuna, oferecendo uma oportunidade de desenvolvimento físico e mental para jovens em vulnerabilidade, criando ambientes favoráveis para combater a evasão escolar e o risco social através de um esporte inclusivo e acessível.</p>
+        </section>
+
+        <section class="orcamento">
+            <div class="center-title"><h2 class="titulo-seccao">Resumo do Orçamento</h2></div>
+            <div class="grelha">
+                <div class="cartao"><div class="titulo-cartao">Recursos Humanos e Encargos</div><p class="descricao" style="font-size: 1.5rem; font-weight: 600; margin-top: 0.5rem;">R$ 302.400,00</p></div>
+                <div class="cartao"><div class="titulo-cartao">Estrutura e Operação</div><p class="descricao" style="font-size: 1.5rem; font-weight: 600; margin-top: 0.5rem;">R$ 411.260,00</p></div>
+                <div class="cartao"><div class="titulo-cartao">Material (Esportivo, Uniforme, etc.)</div><p class="descricao" style="font-size: 1.5rem; font-weight: 600; margin-top: 0.5rem;">R$ 435.359,43</p></div>
+            </div>
+        </section>
+
+        <section class="captacao">
+            <div class="valor-container">
+                <h2>Valor Total Solicitado (Lei de Incentivo ao Esporte)</h2>
+                <p class="valor">R$ 1.420.619,43</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="center-title"><h2 class="titulo-seccao">Informações do Proponente</h2></div>
+            <p>
+                <strong>Proponente:</strong> CLUBE DOS TENISTAS DA BAHIA <br>
+                <strong>CNPJ:</strong> 23.146.328/0001-16 <br>
+                <strong>Paulo Carneiro (Responsável):</strong> <a href="mailto:pfeira@gmail.com">pfeira@gmail.com</a> | Telefone: (71) 98530-4903
+            </p>
+        </footer>
+    </main>
+
+</body>
+</html>
